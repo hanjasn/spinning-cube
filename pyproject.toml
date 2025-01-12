@@ -1,5 +1,5 @@
 [project]
-name = "spinning-cube"
+name = "spinning_cube"
 version = "0.1.0"
 description = ""
 authors = [
@@ -11,6 +11,13 @@ requires-python = ">=3.13"
 dependencies = [
 ]
 
+[project.scripts]
+run = "spinning_cube.src.spinning_cube:main"
+
+# [tool.poetry]
+# packages = [
+#     { include = "spinning_cube" }
+# ]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
